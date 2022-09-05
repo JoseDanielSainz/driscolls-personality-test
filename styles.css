@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.top-logo {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 30%;
+}
+
+section {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 600px;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  text-align: left;
+}
+
+
+.title-block{
+  width: 600px;
+  height: 200px;
+  background-color: #e84265;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+.title-block h2 {
+  font-size: 32px;
+}
+
+.answer-options {
+  margin: 16px 0 23px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.answer-block {
+  width: 286px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.answer-block:hover{
+  cursor: pointer;
+  background: #c2c2c2;
+}
+
+.answer-block h3{
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0 1rem ;
+}
+
+
+.result {
+  display: none;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  background-color: #347ca9;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+.result .result-text{
+  padding: 0 2rem;
+}
+.result h3{
+  font-size: 24px;
+}
+
+.result img{
+  height: 200px;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 100%; */
+    margin: 3rem;
+  }
+
+  .top-logo{
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .title-block {
+    width: 320px;
+    height: auto;
+  }
+
+  .title-block h2{
+    font-size: 17px;
+  }
+
+  .answer-block{
+    width: 320px;
+    
+  }
+
+  .answer-block h3 {
+    font-size: 18px;
+  }
+
+  .result {
+    width: 320px;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .result img {
+    width: 320px;
+    height: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
